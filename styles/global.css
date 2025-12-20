@@ -5,9 +5,11 @@
 }
 
 body {
-  width: 1100px;
-  margin: 0 auto;
+  min-width: 1100px;
+  margin: 0;
   font-family: Raleway, sans-serif;
+  font-weight: normal;
+  background-color: #fff;
 }
 
 h1,
@@ -36,3 +38,4 @@ img {
 button {
   font: inherit;
 }
+
