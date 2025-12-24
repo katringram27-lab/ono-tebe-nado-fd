@@ -176,21 +176,23 @@
 .cover__description {
   display: flex;
   justify-content: space-between;
+  position: relative;
   align-items: center;
-  margin: 112px 50px 0px 0px;
-  padding-bottom: 50px;
+  margin: 112px 50px 50px 50px;
   color: #fff;
 }
 
 .cover__description-text {
   display: flex;
+  position: relative;
   width: 637px;
   align-items: center;
-  text-align: justify;
   justify-content: space-between;
   font-size: 22px;
-  word-spacing: 10px;
-  padding-left: 50px;
+  line-height: 28px;
+  text-align: start;
+  word-spacing: 18px;
+  padding-left: 1px;
   letter-spacing: 0px;
 }
 
@@ -202,10 +204,6 @@
   font-weight: 400;
   text-transform: uppercase;
   font-style: normal;
-}
-
-.cover__description-text-new-spacing {
-  word-spacing: 19px;
 }
 
 .bet-button {
@@ -227,7 +225,7 @@
 
 .lots-title {
   margin-left: 40px;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
   color: #000;
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
@@ -311,7 +309,7 @@
   line-height: normal;
   text-decoration: none;
   padding-left: 40px;
-  padding-top: 27px;
+  padding-top: 32px;
   padding-bottom: 120px;
   color: #000;
 }
@@ -329,11 +327,12 @@
 .about__column {
   display: grid;
   grid-template-columns: auto 693px;
-  padding-top: 35px;
+  padding-top: 33px;
+  gap: 30px;
 }
 
 .about__logo {
-  display: flex;
+  display: flex; 
   background-color: #000;
   justify-self: center;
   width: 240px;
@@ -346,12 +345,12 @@
   width: 148px;
   height: 114px;
   align-self: center;
-  margin-left: 45px;
+  margin-left: 48px;
 }
 
 .about__content {
   display: grid;
-  margin: 103px 0px 172px 0px;
+  padding: 103px 0px 172px 0px;
   row-gap: 30px;
   font-size: 20px;
 }
@@ -382,9 +381,9 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: start;
-  padding: 10px 50px 0px 50px;
   width: 1100px;
   height: 180px;
+  padding: 11px 50px 0px 50px
 }
 
 .footer__contacts {
@@ -405,13 +404,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 22px;
-  list-style: none;
+  line-height: 24px;
+  list-style-type: none;
 }
 
 .footer__menu-list {
   list-style-type: none;
-  align-self: center;
 }
 
 .footer__menu-link {
