@@ -30,6 +30,7 @@ blockquote {
 
 a {
   color: inherit;
+  height: 100%;
 }
 
 img {
@@ -40,3 +41,6 @@ button {
   font: inherit;
 }
 
+article {
+  height: 100%;
+}

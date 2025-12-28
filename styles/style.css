@@ -8,22 +8,20 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 94px 50px 96px 50px;
+  padding: 95px 50px 96px 50px;
 }
 
-.header__link_active .header__link {
+.header__link {
   color: #000;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.header__link {
   display: list-item;
   list-style-type: circle;
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .header__logo {
@@ -51,7 +49,6 @@
   font-size: 18px;
   align-items: center;
   width: 390px;
-  height: 22px;
 }
 
 .header__links-list-item {
@@ -67,21 +64,20 @@
   list-style-type: none;
 }
 
-.address {
-  font-style: normal;
-  line-height: 25px;
-  text-decoration: underline;
-}
-
 .header__address {
   display: flex;
   align-items: center;
   justify-content: end;
+  width: 240px;
+  font-style: normal;
+  line-height: 25px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  margin-left: 145px;
 }
 
 .contacts {
   display: flex;
-  width: 240px;
   flex-direction: column;
   align-items: flex-start;
   font-style: normal;
@@ -92,13 +88,13 @@
   line-height: 25px;
 }
 
-.town-address-one .town-address-two {
+.address__text {
   display: flex;
   align-self: flex-start;
   line-height: 25px;
 }
 
-.phone-number .mail-number {
+.contacts__link {
   display: flex;
   text-decoration: underline;
   align-self: flex-start;
@@ -112,12 +108,12 @@
   width: 1100px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  background-position: right center;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .overlay {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -126,16 +122,14 @@
   position: relative;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 15px;
-  padding: 165px 50px 0px 50px;
+  padding: 164px 50px 0px 50px;
   z-index: 2;
   color: #fff;
   font-size: 100px;
   line-height: 115%;
 }
 
-.aligned-text
-.aligned-text_center
-.aligned-text_right {
+.aligned-text .aligned-text_center .aligned-text_right {
   display: block;
   color: #fff;
   font-family: Raleway, sans-serif;
@@ -150,10 +144,10 @@
 }
 
 .aligned-text_center {
-  line-height: 118%;
+  line-height: 119%;
   text-align: center;
   justify-self: center;
-  margin-left: 35px;
+  margin-left: 34px;
 }
 
 .aligned-text_right {
@@ -178,7 +172,7 @@
   justify-content: space-between;
   position: relative;
   align-items: center;
-  margin: 112px 50px 50px 50px;
+  margin: 107px 50px 47px 50px;
   color: #fff;
 }
 
@@ -219,7 +213,7 @@
 .lots {
   display: inline-block;
   width: 1052px;
-  padding-top: 180px;
+  padding-top: 184px;
   margin: 0px 24px 0px;
 }
 
@@ -239,6 +233,7 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -262,21 +257,21 @@
   column-gap: 24px;
   z-index: 2;
   justify-content: space-between;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card_type_film {
   background-image: url(./../images/card-lot-01.jpg);
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(./../images/card-lot-02.jpg);
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(./../images/card-lot-03.jpg);
-  background-size: cover;
 }
 
 .card__title {
@@ -312,6 +307,7 @@
   padding-top: 32px;
   padding-bottom: 120px;
   color: #000;
+  text-underline-offset: 3px;
 }
 
 .lots__look-more-link-text {
@@ -328,16 +324,16 @@
   display: grid;
   grid-template-columns: auto 693px;
   padding-top: 33px;
-  gap: 30px;
+  gap: 29px;
 }
 
 .about__logo {
-  display: flex; 
+  display: flex;
   background-color: #000;
   justify-self: center;
   width: 240px;
   height: 240px;
-  border-radius: 120px;
+  border-radius: 50%;
 }
 
 .about__logo-image {
@@ -345,7 +341,7 @@
   width: 148px;
   height: 114px;
   align-self: center;
-  margin-left: 48px;
+  margin-left: 49px;
 }
 
 .about__content {
@@ -364,8 +360,6 @@
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
   margin-bottom: 70px;
-  width: 291px;
-  height: 47px;
 }
 
 .about__text {
@@ -382,22 +376,18 @@
   grid-template-columns: auto 1fr auto;
   align-items: start;
   width: 1100px;
-  height: 180px;
-  padding: 11px 50px 0px 50px
+  padding: 12px 50px 0px 50px;
 }
 
-.footer__contacts {
+.footer__address {
   display: flex;
+  align-items: center;
+  justify-content: end;
   width: 264px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   font-style: normal;
-  color: #000;
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
+  line-height: 25px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .footer__menu {
@@ -406,6 +396,7 @@
   align-items: center;
   line-height: 24px;
   list-style-type: none;
+  margin-right: 22px;
 }
 
 .footer__menu-list {
@@ -423,6 +414,7 @@
   font-weight: 400;
   line-height: normal;
   list-style-type: none;
+  text-underline-offset: 5px;
 }
 
 .footer__menu-link_active {
@@ -435,7 +427,6 @@
   flex-direction: row;
   justify-self: end;
   width: 240px;
-  height: 48px;
   gap: 48px;
   list-style-type: none;
   padding-bottom: 131px;
@@ -454,8 +445,3 @@
 .footer__menu-list-item_no-marker {
   list-style-type: none;
 }
-
-
-
-
-
