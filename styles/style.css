@@ -11,8 +11,7 @@
   padding: 92px 50px 96px 50px;
 }
 
-.header__link,
-.header__link_active {
+.header__link {
   color: #000;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -33,7 +32,6 @@
   align-content: start;
   width: 148px;
   height: 105px;
-  margin-top: 13px;
 }
 
 .header__logo-image {
@@ -46,7 +44,6 @@
 .header__links-list {
   display: flex;
   align-items: center;
-  margin-top: 10px;
 }
 
 .header__links-list-main {
@@ -89,7 +86,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
-  margin-top: 12px;
 }
 
 .address__text {
@@ -242,6 +238,7 @@
   justify-content: space-between;
   list-style-type: none;
   flex-wrap: wrap;
+  row-gap: 25px;
 }
 
 .lots__card-list-item {
@@ -386,7 +383,7 @@
   grid-template-columns: auto 1fr auto;
   align-items: start;
   width: 1100px;
-  padding: 0px 50px 115px 50px;
+  padding: 0px 50px 0px 50px;
 }
 
 .footer__address {
